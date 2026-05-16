@@ -5,15 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>De Kathedraal van Oorzaak en Ervaring</title>
     <style>
+        /* Algemene reset en basis */
         body {
             font-family: 'Georgia', 'Times New Roman', serif;
             line-height: 1.8;
             max-width: 700px;
             margin: 0 auto;
             padding: 40px 20px;
+            background: #fafaf8;
             color: #1a1a1a;
-            background-color: #fcfcfc;
         }
+        /* Menubalk */
+        nav {
+            margin-bottom: 2rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .nav-container {
+            display: flex;
+            gap: 1.5rem;
+        }
+        .nav-container a {
+            text-decoration: none;
+            color: #2c5a2c;
+            font-weight: 500;
+        }
+        .nav-container a:hover {
+            text-decoration: underline;
+        }
+        /* Typografie essay */
         h1 {
             font-size: 2em;
             text-align: center;
@@ -51,7 +71,7 @@
             border-top: 1px solid #e0e0e0;
             padding-top: 1.5em;
         }
-        /* Stijl voor de pauze-tekens */
+        /* Pauze-tekens */
         hr.separator {
             border: 0;
             height: 0;
@@ -62,58 +82,6 @@
         }
         hr.separator::after {
             content: "···";
-        }
-        /* Menubalk precies zoals in je blogpost */
-        nav {
-            margin-bottom: 2rem;
-            padding-bottom: 0.5rem;
-            border-bottom: 1px solid #e0e0e0;
-        }
-        .nav-container {
-            display: flex;
-            gap: 1.5rem;
-        }
-        .nav-container a {
-            text-decoration: none;
-            color: #2c5a2c;
-            font-weight: 500;
-        }
-        .nav-container a:hover {
-            text-decoration: underline;
-        }
-        .back-link {
-            display: inline-block;
-            margin-bottom: 2em;
-            color: #5a5a5a;
-            text-decoration: none;
-            border-bottom: 1px solid #ccc;
-        }
-        .back-link:hover {
-            color: #2c5a2c;
-        }
-        .post-list {
-            list-style: none;
-            padding: 0;
-        }
-        .post-list li {
-            margin: 2em 0;
-            border-left: 3px solid #d1d9d0;
-            padding-left: 1.5em;
-        }
-        .post-list li a {
-            font-size: 1.3em;
-            font-weight: bold;
-            text-decoration: none;
-            color: #2c5a2c;
-        }
-        .post-list li a:hover {
-            text-decoration: underline;
-        }
-        .post-date {
-            display: block;
-            font-size: 0.85em;
-            color: #7a7a7a;
-            margin-top: 0.5em;
         }
     </style>
 </head>

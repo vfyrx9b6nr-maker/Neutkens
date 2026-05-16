@@ -5,66 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>De Kathedraal van Oorzaak en Ervaring</title>
     <style>
-        /* Eenvoudige, strakke stijl voor lange tekst */
         body {
             font-family: 'Georgia', 'Times New Roman', serif;
-            line-height: 1.8;
+            line-height: 1.7;
             max-width: 700px;
             margin: 0 auto;
             padding: 40px 20px;
+            background: #fafaf8;  /* zelfde als blogpost */
             color: #1a1a1a;
-            background-color: #fcfcfc;
         }
         h1 {
             font-size: 2em;
             text-align: center;
-            margin-bottom: 0.2em;
-            line-height: 1.3;
+            border-left: none;
+            padding-left: 0;
         }
-        h2 {
-            font-size: 1.4em;
-            margin-top: 2em;
-            margin-bottom: 0.5em;
-            color: #2c2c2c;
-        }
-        .subtitle {
-            text-align: center;
-            font-style: italic;
-            margin-bottom: 3em;
-            color: #555;
-        }
-        p {
-            margin-bottom: 1.5em;
-            text-align: justify;
-            hyphens: auto;
-            -webkit-hyphens: auto;
-        }
-        .author {
-            text-align: center;
-            font-weight: bold;
-            margin-top: 3em;
-        }
-        footer {
-            text-align: center;
-            margin-top: 4em;
-            font-size: 0.9em;
-            color: #888;
-            border-top: 1px solid #e0e0e0;
-            padding-top: 1.5em;
-        }
-        /* Stijl voor de pauze-tekens */
-        hr.separator {
-            border: 0;
-            height: 0;
-            margin: 2.5em auto;
-            text-align: center;
-            letter-spacing: 0.5em;
-            color: #aaa;
-        }
-        hr.separator::after {
-            content: "···";
-        }
-        /* Eenvoudige menubalk */
+        /* Menubalk precies zoals in je blogpost */
         nav {
             margin-bottom: 2rem;
             padding-bottom: 0.5rem;
@@ -81,6 +37,59 @@
         }
         .nav-container a:hover {
             text-decoration: underline;
+        }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 2em;
+            color: #5a5a5a;
+            text-decoration: none;
+            border-bottom: 1px solid #ccc;
+        }
+        .back-link:hover {
+            color: #2c5a2c;
+        }
+        .post-list {
+            list-style: none;
+            padding: 0;
+        }
+        .post-list li {
+            margin: 2em 0;
+            border-left: 3px solid #d1d9d0;
+            padding-left: 1.5em;
+        }
+        .post-list li a {
+            font-size: 1.3em;
+            font-weight: bold;
+            text-decoration: none;
+            color: #2c5a2c;
+        }
+        .post-list li a:hover {
+            text-decoration: underline;
+        }
+        .post-date {
+            display: block;
+            font-size: 0.85em;
+            color: #7a7a7a;
+            margin-top: 0.5em;
+        }
+        footer {
+            margin-top: 4em;
+            text-align: center;
+            font-size: 0.9em;
+            color: #888;
+            border-top: 1px solid #e0e0e0;
+            padding-top: 2em;
+        }
+        hr.separator {
+            border: 0;
+            height: 0;
+            margin: 2em auto;
+            text-align: center;
+            letter-spacing: 0.5em;
+            color: #bbb;
+        }
+        hr.separator::after {
+            content: "···";
         }
     </style>
 </head>

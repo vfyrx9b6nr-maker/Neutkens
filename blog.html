@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog - De Kathedraal</title>
+        
     <style>
         body {
             font-family: 'Georgia', 'Times New Roman', serif;
@@ -11,7 +12,7 @@
             max-width: 700px;
             margin: 0 auto;
             padding: 40px 20px;
-            background: #fafaf8;
+            background: #fafaf8;  /* zelfde als blogpost */
             color: #1a1a1a;
         }
         h1 {
@@ -19,6 +20,24 @@
             text-align: center;
             border-left: none;
             padding-left: 0;
+        }
+        /* Menubalk precies zoals in je blogpost */
+        nav {
+            margin-bottom: 2rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        .nav-container {
+            display: flex;
+            gap: 1.5rem;
+        }
+        .nav-container a {
+            text-decoration: none;
+            color: #2c5a2c;
+            font-weight: 500;
+        }
+        .nav-container a:hover {
+            text-decoration: underline;
         }
         .back-link {
             display: inline-block;
@@ -30,7 +49,6 @@
         .back-link:hover {
             color: #2c5a2c;
         }
-        /* Lijst met blogposts */
         .post-list {
             list-style: none;
             padding: 0;
@@ -73,24 +91,6 @@
         }
         hr.separator::after {
             content: "···";
-        }
-        /* Eenvoudige menubalk */
-        nav {
-            margin-bottom: 2rem;
-            padding-bottom: 0.5rem;
-            border-bottom: 1px solid #e0e0e0;
-        }
-        .nav-container {
-            display: flex;
-            gap: 1.5rem;
-        }
-        .nav-container a {
-            text-decoration: none;
-            color: #2c5a2c;
-            font-weight: 500;
-        }
-        .nav-container a:hover {
-            text-decoration: underline;
         }
     </style>
 </head>

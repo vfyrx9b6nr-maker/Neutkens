@@ -5,92 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>De Kathedraal van Oorzaak en Ervaring</title>
     <style>
-        body {
-            font-family: 'Georgia', 'Times New Roman', serif;
-            line-height: 1.7;
-            max-width: 700px;
-            margin: 0 auto;
-            padding: 40px 20px;
-            background: #fafaf8;  /* zelfde als blogpost */
-            color: #1a1a1a;
-        }
-        h1 {
-            font-size: 2em;
-            text-align: center;
-            border-left: none;
-            padding-left: 0;
-        }
-        /* Menubalk precies zoals in je blogpost */
-        nav {
-            margin-bottom: 2rem;
-            padding-bottom: 0.5rem;
-            border-bottom: 1px solid #e0e0e0;
-        }
-        .nav-container {
-            display: flex;
-            gap: 1.5rem;
-        }
-        .nav-container a {
-            text-decoration: none;
-            color: #2c5a2c;
-            font-weight: 500;
-        }
-        .nav-container a:hover {
-            text-decoration: underline;
-        }
-        .back-link {
-            display: inline-block;
-            margin-bottom: 2em;
-            color: #5a5a5a;
-            text-decoration: none;
-            border-bottom: 1px solid #ccc;
-        }
-        .back-link:hover {
-            color: #2c5a2c;
-        }
-        .post-list {
-            list-style: none;
-            padding: 0;
-        }
-        .post-list li {
-            margin: 2em 0;
-            border-left: 3px solid #d1d9d0;
-            padding-left: 1.5em;
-        }
-        .post-list li a {
-            font-size: 1.3em;
-            font-weight: bold;
-            text-decoration: none;
-            color: #2c5a2c;
-        }
-        .post-list li a:hover {
-            text-decoration: underline;
-        }
-        .post-date {
-            display: block;
-            font-size: 0.85em;
-            color: #7a7a7a;
-            margin-top: 0.5em;
-        }
-        footer {
-            margin-top: 4em;
-            text-align: center;
-            font-size: 0.9em;
-            color: #888;
-            border-top: 1px solid #e0e0e0;
-            padding-top: 2em;
-        }
-        hr.separator {
-            border: 0;
-            height: 0;
-            margin: 2em auto;
-            text-align: center;
-            letter-spacing: 0.5em;
-            color: #bbb;
-        }
-        hr.separator::after {
-            content: "···";
-        }
+        /* Dit is dezelfde stijl als op je hoofdpagina */
+        * { margin:0; padding:0; box-sizing: border-box; }
+        body { font-family: 'Georgia', serif; line-height: 1.6; background: #fafaf8; padding: 0 1rem; }
+        .container { max-width: 800px; margin: 0 auto; padding: 2rem 0 4rem; }
+        nav { background: rgba(255,255,255,0.95); border-bottom: 1px solid #ddd; padding: 0.75rem 1rem; position: sticky; top: 0; backdrop-filter: blur(4px); }
+        .nav-container { max-width: 800px; margin: 0 auto; display: flex; gap: 1.5rem; flex-wrap: wrap; }
+        .nav-container a { text-decoration: none; color: #2c3e2f; font-weight: 500; border-bottom: 2px solid transparent; padding: 0.25rem 0; }
+        .nav-container a:hover { border-bottom-color: #6b8c6b; }
+        h1 { margin-top: 0.5rem; font-size: 2rem; border-left: 4px solid #6b8c6b; padding-left: 1rem; }
+        .post-date { color: #5a5a5a; margin-bottom: 2rem; display: block; }
+        .back-link { margin-top: 2rem; display: inline-block; color: #2c5a2c; }
+        hr { margin: 2rem 0; }
+        .footer { margin-top: 3rem; text-align: center; font-size: 0.85rem; color: #5a5a5a; border-top: 1px solid #e0e0e0; padding-top: 1.5rem; }
+        @media (max-width: 600px) { h1 { font-size: 1.6rem; } }
     </style>
 </head>
 <body>

@@ -96,21 +96,94 @@
         <span class="post-date">17 mei 2026</span>
     
     <p style="font-style: italic; margin: 1.5rem 0; padding-left: 1rem; border-left: 2px solid #d1d9d0;">
-        Een reis naar de grens van het eindige
+        Een reis naar de grens van het eindige, maar nooit eraan voorbij.
     </p>
         
-    <h3>De Trap van het Begrip: Van Miljard naar Ongenaakbaar</h3>
+    <h3>De Trap van het Begrip: Van miljard naar onvoorstelbaar</h3>
     <p>
-        Laten we beginnen met het bevattelijke. Een miljard seconden is ongeveer 31,7 jaar. Een biljoen seconden is 31.700 jaar, ouder dan de laatste ijstijd. We merken al hoe snel onze intuïtie het begeeft. De getallen waar we het over gaan hebben, maken deze voorbeelden lachwekkend insignificant. Ze reduceren een biljoen tot een afrondingsfout. Om deze getallen te benoemen, moeten we ons gereedschap om over getallen na te denken zélf opblazen. We beklimmen de Fast Growing Hierarchy (FGH).
+        Laten we beginnen met het bevattelijke. Een miljard seconden is ongeveer 31,7 jaar. Een biljoen seconden is 31.700 jaar, ouder dan de laatste ijstijd. We merken al hoe snel onze intuïtie het begeeft. De getallen waar we het over gaan hebben, maken deze voorbeelden lachwekkend klein. Ze reduceren een biljoen tot een afrondingsfout. Om deze getallen te benoemen, moeten we ons gereedschap om over getallen na te denken zélf bijna opblazen. We beklimmen de Fast Growing Hierarchy (FGH).
     </p>
 
-    <h3>De Snelgroeiende Hiërarchie: Een Oneindige Ladder van Eindige Sporten</h3>
-    <p>
-        De FGH is een systeem om functies te indexeren op hun groeisnelheid. Het begint simpel. Op de eerste sport staat de opvolgerfunctie. Op de volgende sporten komen optellen, vermenigvuldigen, machtsverheffen. De functie <em>f</em><sub>0</sub>(<em>n</em>) = <em>n</em>+1 is het nulpunt. <em>f</em><sub>1</sub>(<em>n</em>) herhaalt <em>f</em><sub>0</sub> <em>n</em> keer, dus <em>f</em><sub>1</sub>(<em>n</em>) = 2<em>n</em>. <em>f</em><sub>2</sub>(<em>n</em>) is in wezen <em>n</em> × 2<sup><em>n</em></sup>, exponentieel. De meeste mensen kunnen tot hier volgen. Het wordt interessant bij de oneindige ordinale getallen die als index dienen.
-    </p>
-    <p>
-        <em>f</em><sub>ω</sub>(<em>n</em>) is de functie die groeit als <em>f</em><sub><em>n</em></sub>(<em>n</em>). We voeren de functie uit met een index die zelf even groot is als de input. Dit is de Ackermann-functie, een klassiek voorbeeld van iets dat niet langer 'gewoon' exponentieel is, maar de grens van het berekenbare oprekt. Vervolgens definiëren we <em>f</em><sub>ω+1</sub>(<em>n</em>), <em>f</em><sub>ω<sup>ω</sup></sub>(<em>n</em>), en we racen door naar het ordinaalgetal ε<sub>0</sub>. Dit is het punt waarop de functie explodeert tot iets wat we niet meer kunnen volgen. De output van <em>f</em><sub>ε<sub>0</sub></sub>(3)—met input slechts 3—is al astronomisch. En we zijn nog maar net begonnen.
-    </p>
+<h3>De Snelgroeiende Hiërarchie: Een Oneindige Ladder van Eindige Sporten</h3>
+<p>
+    De Fast Growing Hierarchy (FGH) is een systeem om functies te indexeren op hun groeisnelheid. Het begint simpel en explodeert dan. We bouwen het stap voor stap op, met een vaste input <em>n</em> = 3 om het behapbaar te houden. Het is instructief om elke stap zelf uit te schrijven; alleen dan zie je hoe razendsnel de output groeit.
+</p>
+
+<p>
+    De basis. We definiëren de opvolgerfunctie:
+</p>
+
+<p style="text-align: center;">
+    <em>f</em><sub>0</sub>(<em>n</em>) = <em>n</em> + 1
+</p>
+
+<p>
+    Voor <em>n</em> = 3 is dat simpelweg 4. Maar dit is slechts de eerste sport van een ladder die zichzelf eindeloos kan herhalen. De volgende sport wordt gedefinieerd door de vorige sport een aantal keer toe te passen dat gelijk is aan de input zelf:
+</p>
+
+<p style="text-align: center;">
+    <em>f</em><sub>1</sub>(<em>n</em>) = <em>f</em><sub>0</sub>(<em>f</em><sub>0</sub>(… <em>n</em> keer … (<em>n</em>))) = <em>n</em> + <em>n</em> = 2<em>n</em>
+</p>
+
+<p>
+    Met <em>n</em> = 3: <em>f</em><sub>1</sub>(3) = <em>f</em><sub>0</sub>(<em>f</em><sub>0</sub>(<em>f</em><sub>0</sub>(3))) = <em>f</em><sub>0</sub>(<em>f</em><sub>0</sub>(4)) = <em>f</em><sub>0</sub>(5) = 6.
+</p>
+
+<p>
+    De volgende sport herhaalt de vorige sport <em>n</em> keer:
+</p>
+
+<p style="text-align: center;">
+    <em>f</em><sub>2</sub>(<em>n</em>) = <em>f</em><sub>1</sub>(<em>f</em><sub>1</sub>(… <em>n</em> keer … (<em>n</em>))) = <em>n</em> × 2<sup><em>n</em></sup>
+</p>
+
+<p>
+    Met <em>n</em> = 3: <em>f</em><sub>2</sub>(3) = <em>f</em><sub>1</sub>(<em>f</em><sub>1</sub>(<em>f</em><sub>1</sub>(3))). We weten <em>f</em><sub>1</sub>(3) = 6, dus <em>f</em><sub>1</sub>(6) = 12, dus <em>f</em><sub>1</sub>(12) = 24. De output voor de bescheiden input 3 is al 24. Exponentiële groei heeft toegeslagen.
+</p>
+
+<p>
+    En zo gaat het door. <em>f</em><sub>3</sub>(<em>n</em>) herhaalt <em>f</em><sub>2</sub> een aantal keer, wat neerkomt op een toren van machten. Dit patroon werkt voor elke eindige index. De echte explosie komt wanneer we de index zelf oneindig laten worden. We definiëren:
+</p>
+
+<p style="text-align: center;">
+    <em>f</em><sub>ω</sub>(<em>n</em>) = <em>f</em><sub><em>n</em></sub>(<em>n</em>)
+</p>
+
+<p>
+    Hier gebeurt iets fundamenteels. De index is niet langer een vast getal, maar wordt gevoed door de input. We passen de <em>n</em>-de functie toe op <em>n</em> zelf. Voor <em>n</em> = 3:
+</p>
+
+<p style="text-align: center;">
+    <em>f</em><sub>ω</sub>(3) = <em>f</em><sub>3</sub>(3)
+</p>
+
+<p>
+    <em>f</em><sub>3</sub>(3) is een toren van machten. Dit is de Ackermann-functie, een klassiek voorbeeld van iets dat niet langer 'gewoon' exponentieel is. Het is het oermonster van de berekenbaarheidstheorie.
+</p>
+
+<p>
+    Maar we kunnen verder. De index ω + 1 betekent: herhaal de ω-functie een aantal keer:
+</p>
+
+<p style="text-align: center;">
+    <em>f</em><sub>ω+1</sub>(<em>n</em>) = <em>f</em><sub>ω</sub>(<em>f</em><sub>ω</sub>(… <em>n</em> keer … (<em>n</em>)))
+</p>
+
+<p>
+    Voor <em>n</em> = 3:
+</p>
+
+<p style="text-align: center;">
+    <em>f</em><sub>ω+1</sub>(3) = <em>f</em><sub>ω</sub>(<em>f</em><sub>ω</sub>(<em>f</em><sub>ω</sub>(3)))
+</p>
+
+<p>
+    We berekenen eerst <em>f</em><sub>ω</sub>(3) = <em>f</em><sub>3</sub>(3), een gigantisch getal. Laten we dat getal voor het gemak G noemen. De volgende stap is <em>f</em><sub>ω</sub>(G). Maar let op: <em>f</em><sub>ω</sub>(G) = <em>f</em><sub>G</sub>(G). Dat betekent dat we de G-de functie in de hiërarchie toepassen op G zelf. G was al gigantisch, en nu gebruiken we G als <em>index</em> in de hiërarchie. De laatste stap is <em>f</em><sub>ω</sub>(<em>f</em><sub>G</sub>(G)), wat de uitkomst van de vorige stap nóg een keer als index gebruikt. De geest hapert.
+</p>
+
+<p>
+    Dit patroon herhaalt zich. We racen door naar ω<sup>ω</sup>, en uiteindelijk naar het ordinaalgetal ε<sub>0</sub>. ε<sub>0</sub> is het kleinste getal waarvoor geldt dat ω tot de macht ε<sub>0</sub> gelijk is aan ε<sub>0</sub> zelf. Het is een vast punt. De functie <em>f</em><sub>ε<sub>0</sub></sub>(<em>n</em>) explodeert op een manier die we niet meer kunnen volgen. De output van <em>f</em><sub>ε<sub>0</sub></sub>(3) is al astronomisch. En we zijn nog maar net begonnen.
+</p>
 
     <h3>De Boom der Bomen: TREE(3)</h3>
     <p>

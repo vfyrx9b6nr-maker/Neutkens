@@ -56,6 +56,12 @@ p {
     color: #7a7a7a;
     margin-bottom: 2rem;
 }
+.post-date-blog {
+    display: block; 
+    font-size: 0.85em;
+    color: #7a7a7a; 
+    margin-top: 0.5em;
+}
 .back-link {
     display: inline-block;
     margin-top: 1rem;

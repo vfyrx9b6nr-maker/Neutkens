@@ -89,14 +89,6 @@
     
     <nav id="main-menu"></nav>
 
-    <script>
-    fetch('menu.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('main-menu').innerHTML = data;
-      });
-    </script>
-    
     <h1>Blog & Aantekeningen</h1>
     <p>Hier bewaar ik korte overdenkingen, aanvullingen op het essay en nieuwe inzichten.</p>
 
@@ -129,5 +121,14 @@
     <footer>
         <p>Wout Neutkens — De Kathedraal</p>
     </footer>
+    
+    <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('main-menu').innerHTML = data;
+      });
+    </script>
+    
 </body>
 </html>

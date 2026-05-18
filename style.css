@@ -96,6 +96,7 @@ h1.blog {
     text-align: center;
     border-left: none;
     padding-left: 0;
+    margin-top: 0;
 }
 .post-list {
     list-style: none;

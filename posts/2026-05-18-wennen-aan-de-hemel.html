@@ -58,6 +58,16 @@
         <p>De oude wijsheid dat de mens aan alles kan wennen is dus zowel een belofte als een waarschuwing. Ze belooft ons dat we vrijwel elke storm kunnen doorstaan, dat er na elke nacht een ochtend komt, dat de wonden helen en het leven doorgaat. Maar ze waarschuwt ons ook dat deze heling soms een litteken achterlaat dat ongevoelig is geworden, dat het doorgaan van het leven kan betekenen dat we onze idealen achter ons laten, dat de ochtend die aanbreekt een valse dageraad kan zijn die een gevangenis verlicht. In het bewust navigeren van deze spanning, in het voortdurende onderscheid tussen gezonde aanpassing en zielsverraad, ligt de opdracht van een geleefd leven. Want uiteindelijk gaat het er niet alleen om <em>dát</em> we gelukkig zijn, maar <em>wát voor soort</em> geluk we hebben gekozen, en tegen welke prijs.</p>
     </section>
         
+    <hr>
+    <a href="../blog.html" class="back-link">← Terug naar het blogarchief</a>
+
+    <script>
+    fetch('../menu.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('main-menu').innerHTML = data;
+      });
+    </script>
         
 </body>
 </html>

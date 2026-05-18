@@ -140,5 +140,13 @@
     <hr>
     <a href="../blog.html" class="back-link">← Terug naar het blogarchief</a>
 
+    <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('main-menu').innerHTML = data;
+      });
+    </script>
+    
 </body>
 </html>

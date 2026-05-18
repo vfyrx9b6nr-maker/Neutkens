@@ -1,1 +1,75 @@
-hoi
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links | De Kathedraal van Oorzaak en Ervaring</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <nav id="main-menu"></nav>
+
+    <h1>Verder Lezen & Bronnen</h1>
+    <p>
+        Een kathedraal bouw je niet alleen. Dit is een verzameling van de fundamenten, de steigers en de vergezichten die hebben bijgedragen aan het denken op deze site. Het is een levende lijst, die zal groeien naarmate het bouwwerk vordert.
+    </p>
+
+    <section>
+        <h2>De Twee Pijlers</h2>
+        
+        <article>
+            <h3><a href="https://www.wolframphysics.org/" target="_blank" rel="noopener noreferrer">The Wolfram Physics Project</a></h3>
+            <p>
+                De ene pijler van de kathedraal. Stephen Wolfram en zijn team werken hier openlijk aan de missie om de volledige fysieke werkelijkheid te herleiden tot een simpele, computationele regel. Het is de plek om de technische details van hypergrafen, de Ruliad, en de observator-theorie in te duiken. Voor iedereen die na het essay wil begrijpen hoe een regeltje een universum kan bouwen, is dit de werkplaats.
+            </p>
+        </article>
+
+        <article>
+            <h3><a href="https://www.iit.wiki/home" target="_blank" rel="noopener noreferrer">IIT Wiki</a></h3>
+            <p>
+                De andere pijler. Een zorgvuldig onderhouden wiki over de Integrated Information Theory, ontwikkeld door het Center for Sleep and Consciousness aan de UW–Madison. Hier wordt de wiskunde en filosofie van bewustzijn als 'geïntegreerde informatie' uiteengezet. De link legt uit wat een causale structuur tot een ervaring maakt. Onmisbaar om het 'waarom' achter de Phi in het essay te doorgronden.
+            </p>
+        </article>
+    </section>
+
+    <section>
+        <h2>Verdieping</h2>
+        
+        <article>
+            <h3><a href="https://www.wolframscience.com/nks/" target="_blank" rel="noopener noreferrer">A New Kind of Science (NKS)</a></h3>
+            <p>
+                Het boek waarmee het allemaal begon. Wolframs magnum opus uit 2002 is een visueel en conceptueel manifest voor het idee dat simpele programma's complexiteit kunnen genereren. Het is de bron van de 'Ruliad' en de inspiratie voor het computationele universum. Een tijdloos bladerboek voor wie wil zien hoe eenvoud regels tot patronen weeft.
+            </p>
+        </article>
+
+        <article>
+            <h3><a href="https://www.youtube.com/@lasttheory" target="_blank" rel="noopener noreferrer">The Last Theory (YouTube)</a></h3>
+            <p>
+                Een toegankelijk kanaal dat de ideeën van Wolfram Physics op een kalme, diepgravende manier uitlegt. Perfect voor als je het essay hebt gelezen en denkt: "Oké, maar hoe werkt dat dan precies, die hypergraaf?" De host Mark is een geduldige gids door het computationele universum.
+            </p>
+        </article>
+    </section>
+
+    <section>
+        <h2>Speelgoed en Gereedschap</h2>
+        
+        <article>
+            <h3><a href="https://demonstrations.wolfram.com/" target="_blank" rel="noopener noreferrer">Wolfram Demonstrations Project</a></h3>
+            <p>
+                Een oneindige speeltuin van interactieve modellen. Van elementaire deeltjesfysica tot speltheorie. Hier kun je zelf aan de knoppen draaien van de causaliteit en zien hoe simpele regels complex gedrag baren. De kathedraal in miniatuur, draaiend in je browser.
+            </p>
+        </article>
+    </section>
+
+    <hr>
+    <p><a href="index.html">← Terug naar de Kathedraal</a></p>
+
+    <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('main-menu').innerHTML = data;
+      });
+    </script>
+</body>
+</html>

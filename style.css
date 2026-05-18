@@ -16,7 +16,7 @@ h1 {
     padding-left: 1rem;
     line-height: 1.2;
 }
-he1 {
+h1.essay {
     font-size: 2em;
     text-align: center;
     margin-bottom: 0.2em;
@@ -88,7 +88,7 @@ footer {
 }
 
 /* Blog-specifiek */
-hb1 {
+h1.blog {
     font-size: 2em;
     text-align: center;
     border-left: none;

@@ -8,6 +8,51 @@ body {
     background: #f0f2ed;
     color: #1a1a1a;
 }
+        /* Blog-specifiek */
+        
+        .post-list {
+            list-style: none;
+            padding: 0;
+        }
+        .post-list li {
+            margin: 2em 0;
+            border-left: 3px solid #d1d9d0;
+            padding-left: 1.5em;
+        }
+        .post-list li a {
+            font-size: 1.3em;
+            font-weight: bold;
+            text-decoration: none;
+            color: #2c5a2c;
+        }
+        .post-list li a:hover {
+            text-decoration: underline;
+        }
+        .post-date {
+            display: block;
+            font-size: 0.85em;
+            color: #7a7a7a;
+            margin-top: 0.5em;
+        }
+        footer {
+            margin-top: 4em;
+            text-align: center;
+            font-size: 0.9em;
+            color: #888;
+            border-top: 1px solid #e0e0e0;
+            padding-top: 2em;
+        }
+        hr.separator {
+            border: 0;
+            height: 0;
+            margin: 2em auto;
+            text-align: center;
+            letter-spacing: 0.5em;
+            color: #bbb;
+        }
+        hr.separator::after {
+            content: "···";
+        }
 /* Header 1 */
 h1 {
     font-size: 2em;
@@ -15,6 +60,13 @@ h1 {
     border-left: 3px solid #d1d9d0;
     padding-left: 1rem;
     line-height: 1.2;
+}
+/* Header 1 blog overzicht */
+hb1 {
+    font-size: 2em;
+    text-align: center;
+    border-left: none;
+    padding-left: 0;
 }
 /* Paragraaf */
 p {

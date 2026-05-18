@@ -80,16 +80,8 @@
 </head>
 <body>
 
-   <nav id="main-menu"></nav>
+    <nav id="main-menu"></nav>
 
-    <script>
-    fetch('menu.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('main-menu').innerHTML = data;
-      });
-    </script>
-    
     <h1>Over dit project</h1>
     
     <p>Mijn naam is <strong>Wout Neutkens</strong>. Ik ben een onafhankelijk denker, geïnteresseerd in de fundamenten van de werkelijkheid: van computationele natuurkunde, bewustzijnstheorieën (IIT) en finitistische wiskunde tot de morele vraag hoe we leed kunnen uitbannen en geluk kunnen stapelen.</p>
@@ -104,5 +96,13 @@
         <p style="text-align:center">Wout Neutkens — De Kathedraal</p>
     </footer>
     
-    </body>
+    <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('main-menu').innerHTML = data;
+      });
+    </script>
+    
+</body>
 </html>

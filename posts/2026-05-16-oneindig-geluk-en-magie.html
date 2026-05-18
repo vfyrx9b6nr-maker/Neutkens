@@ -8,13 +8,7 @@
 </head>
 <body>
 
-    <nav>
-        <div class="nav-container">
-            <a href="../index.html">Essay</a>
-            <a href="../blog.html">Blog</a>
-            <a href="../over.html">Over</a>
-        </div>
-    </nav>
+    <nav id="main-menu"></nav>
     
     <div class="container">
         <h1>Oneindig geluk en magie</h1>
@@ -40,7 +34,7 @@
     </div>
     
     <script>
-    fetch('menu.html')
+    fetch('../menu.html')
       .then(response => response.text())
       .then(data => {
         document.getElementById('main-menu').innerHTML = data;

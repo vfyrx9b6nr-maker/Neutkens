@@ -1,1 +1,52 @@
-dj
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - The Cathedral</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav id="main-menu"></nav>
+
+    <h1 class="blog">About This Project</h1>
+    
+    <p>My name is <strong>Wout Neutkens</strong>. I am an independent thinker, interested in the foundations of reality: from computational physics, theories of consciousness (IIT), and finitistic mathematics to the moral question of how we can eliminate suffering and stack happiness.</p>
+    
+    <p>This essay, <em>The Cathedral of Cause and Experience</em>, is the first stone. It postulates a single, reliable Rule as the foundation of everything. From that follows a path toward sufficient safety and an infinite stacking of happiness — not as a utopia, but as a technical and moral project.</p>
+    
+    <p>On the <a href="blog.html"><strong>Blog</strong></a>, reflections, additions, and insights appear regularly.</p>
+    
+    <article>
+        <h3><a href="https://youtube.com/@woutneutkens" target="_blank" rel="noopener noreferrer">YouTube Account</a></h3>
+        <p>
+            This account is my collection cabinet with playlists. Feel free to take a look.
+        </p>
+        <ul>
+            <li><a href="https://youtube.com/playlist?list=PLLPKpF4KqbYBCaXRX33gYFf5CGP4kkZ27&si=5FG-o-wLWK2UrP8f" target="_blank" rel="noopener noreferrer">Wolfram</a></li> 
+            <li><a href="https://youtube.com/playlist?list=PLLPKpF4KqbYAgaGECjA8fQIhaSDIIbcQj&si=7wecKhpzoPjWt1rL" target="_blank" rel="noopener noreferrer">Tononi</a></li>
+            <li><a href="https://youtube.com/playlist?list=PLLPKpF4KqbYBoDKKRvtQz_UibDAelxhDQ&si=uwB0JFTyu-Ug1Mv5" target="_blank" rel="noopener noreferrer">Neutkens</a></li>
+            <li><a href="https://youtube.com/playlist?list=PLLPKpF4KqbYBSeTgSa4QjqXKZrD0AShCw&si=ETotp36OTfekgbCr" target="_blank" rel="noopener noreferrer">General Science</a></li>
+            <li><a href="https://youtube.com/playlist?list=PLIljB45xT85C56MUSEdS_p--HiTrNnRtc&si=JZ53lsyD63DCBNjU" target="_blank" rel="noopener noreferrer">Arithmetic and Geometry</a></li>
+        </ul>
+    </article>
+    
+    <p>All my material is free to share, unless stated otherwise.</p>
+    
+    <hr class="separator">
+      
+    <p style="text-align: right; margin-top: 2rem;">
+        <a href="#" class="back-link" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">↑ Back to top</a>
+    </p>
+    
+    <script>
+    fetch('menu.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('main-menu').innerHTML = data;
+      });
+    </script>
+    
+</body>
+</html>

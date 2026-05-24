@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How Big is Big? - The Cathedral</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    
+    <nav id="main-menu"></nav>
+
+    <div class="container">
+        <h1>How Big is Big?</h1>
+        <span class="post-date">17 May 2026</span>
+    
+    <p style="font-style: italic; margin: 1.5rem 0; padding-left: 1rem; border-left: 2px solid #d1d9d0;">
+        A journey to the boundary of the finite, but never beyond it!
+    </p>
+        
+    <h3>The Ladder of Understanding: From Billion to Inconceivable</h3>
+    <p>
+        Let's begin with the graspable. A billion seconds is about 31.7 years. A trillion seconds is 31,700 years, older than the last ice age. The numbers we are about to discuss make these examp[...]
+    </p>
+
+    <h3>The Fast Growing Hierarchy: A Ladder of Ever Larger Steps</h3>
+    <p>
+        The Fast Growing Hierarchy (FGH) is a system for indexing functions by their growth rate. It begins simply and then explodes. We build it step by step, with a fixed input <em>n</em> = 3 to[...]
+    </p>
+    
+    <p>
+        The base. We define the successor function:
+    </p>
+    
+    <p style="text-align: center;">
+        <em>f</em><sub>0</sub>(<em>n</em>) = <em>n</em> + 1
+    </p>
+    
+    <p>
+        For <em>n</em> = 3 that is simply 4. But this is only the first rung of a ladder that can repeat itself endlessly. The next rung is defined by applying the current rung a number of times e[...]
+    </p>
+    
+    <p style="text-align: center;">
+        <em>f</em><sub>1</sub>(<em>n</em>) = <em>f</em><sub>0</sub>(<em>f</em><sub>0</sub>(… <em>n</em> times … (<em>n</em>))) = <em>n</em> + <em>n</em> = 2<em>n</em>
+    </p>
+    
+    <p>
+        With <em>n</em> = 3: <em>f</em><sub>1</sub>(3) = <em>f</em><sub>0</sub>(<em>f</em><sub>0</sub>(<em>f</em><sub>0</sub>(3))) = <em>f</em><sub>0</sub>(<em>f</em><sub>0</sub>(4)) = <em>f</em><[...]
+    </p>
+    
+    <p>
+        The next rung repeats the current one <em>n</em> times:
+    </p>
+    
+    <p style="text-align: center;">
+        <em>f</em><sub>2</sub>(<em>n</em>) = <em>f</em><sub>1</sub>(<em>f</em><sub>1</sub>(… <em>n</em> times … (<em>n</em>))) = <em>n</em> × 2<sup><em>n</em></sup>
+    </p>
+    
+    <p>
+        With <em>n</em> = 3: <em>f</em><sub>2</sub>(3) = <em>f</em><sub>1</sub>(<em>f</em><sub>1</sub>(<em>f</em><sub>1</sub>(3))). We know <em>f</em><sub>1</sub>(3) = 6, so <em>f</em><sub>1</sub>[...]
+    </p>
+    
+    <p>
+        And so it continues. <em>f</em><sub>3</sub>(<em>n</em>) repeats <em>f</em><sub>2</sub> a number of times, which amounts to a small tower of powers, three steps high. This pattern works for[...]
+    </p>
+    
+    <p style="text-align: center;">
+        <em>f</em><sub>ω</sub>(<em>n</em>) = <em>f</em><sub><em>n</em></sub>(<em>n</em>)
+    </p>
+    
+    <p>
+        Here something fundamental happens: we needed a new symbol. At first we try to reduce the number of symbols for a large number, but is that really possible for large numbers? We apply the [...]
+    </p>
+    
+    <p style="text-align: center;">
+        <em>f</em><sub>ω</sub>(3) = <em>f</em><sub>3</sub>(3)
+    </p>
+    
+    <p>
+        <em>f</em><sub>3</sub>(3) is a tower of powers. <em>f</em><sub>3</sub>(3) = <em>f</em><sub>2</sub>(<em>f</em><sub>2</sub>(<em>f</em><sub>2</sub>(3))). We know <em>f</em><sub>2</sub>(3) = 2[...]
+    </p>
+    
+    <p>
+        But we can go further. Here we must be ever more careful to define everything properly, for that ultimately determines our human limit. The index 1 + ω means: first substitute ω and then[...]
+    </p>
+    
+    <p style="text-align: center;">
+        <em>f</em><sub>ω+1</sub>(<em>n</em>) = <em>f</em><sub>ω</sub>(<em>f</em><sub>ω</sub>(… <em>n</em> times … (<em>n</em>)))
+    </p>
+    
+    <p>
+        For <em>n</em> = 3:
+    </p>
+    
+    <p style="text-align: center;">
+        <em>f</em><sub>ω+1</sub>(3) = <em>f</em><sub>ω</sub>(<em>f</em><sub>ω</sub>(<em>f</em><sub>ω</sub>(3)))
+    </p>
+    
+    <p>
+        We have <em>f</em><sub>ω</sub>(3) = <em>f</em><sub>3</sub>(3), which we already calculated and it was a gigantic number, let's call it G. The number of atoms in the universe is about 10<[...]
+    </p>
+    
+    <p>
+        This pattern repeats itself. We race through to ω<sup>ω</sup>, and ultimately to the ordinal number ε<sub>0</sub>. ε<sub>0</sub> is the smallest number for which ω raised to the powe[...]
+    </p>
+
+    <h3>The Tree of Trees: TREE(3)</h3>
+    <p>
+        Some numbers are so large that they can only be described in a creative way. The game for TREE(<em>n</em>) is simple: you draw trees (networks of points and lines) with seeds of at most <[...]
+    </p>
+    <p>
+        The answer for <em>n</em>=1 is 1. For <em>n</em>=2 it is 3. For <em>n</em>=3 the answer is TREE(3). And TREE(3) is a number so immensely large that it is 'probably' around <em>f</em><sub>[...]
+    </p>
+
+    <h3>The 'Busy Beaver'</h3>
+    <p>
+        If TREE(3) is a world, then the Busy Beaver numbers are vast universes surrounding it. The Busy Beaver game revolves around Turing machines—simple, theoretical computers with a finite n[...]
+    </p>
+    <p>
+        For <em>n</em>=4 and <em>n</em>=5, BB(<em>n</em>) is computable. For <em>n</em>=6 it is known that the value is larger than <em>f</em><sub>4</sub>(5). For <em>n</em>=7 it may still be exp[...]
+    </p>
+    <p>
+        The number of possible Turing machines for an arbitrary <em>n</em>-state machine with 2 symbols can be calculated with the following formula: <em>N</em> = (4<em>n</em> + 4)<sup>2<em>n</em>[...]
+    </p>
+    <p>
+        And here the circle closes with our cathedral. The Busy Beaver function is <em>uncomputable</em>. The universe, driven by a simple, reliable rule, produces causality. But because of that [...]
+    </p>
+
+    <h3>Conclusion: The Sublime Number?</h3>
+    <p>
+        We began with the graspable: 31.7 years of a human life. We end with numbers that resemble infinity more than they do 1, 2, 3, and 4. But TREE(3) and BB(100) are not infinity. They are pu[...]
+    </p>
+
+    <hr>
+    <a href="../blog.html" class="back-link">← Back to the blog archive</a>
+
+    <script>
+    fetch('../menu.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('main-menu').innerHTML = data;
+      });
+    </script>
+    
+</body>
+</html>

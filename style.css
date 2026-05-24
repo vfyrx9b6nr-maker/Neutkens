@@ -136,6 +136,10 @@ nav {
 .nav-container {
     display: flex;
     gap: 1.5rem;
+    align-items: center;
+}
+.nav-print {
+    margin-left: auto;
 }
 .nav-container a {
     text-decoration: none;

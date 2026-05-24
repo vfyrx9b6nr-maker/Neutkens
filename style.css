@@ -136,7 +136,6 @@ nav {
 .nav-container {
     display: flex;
     gap: 1.5rem;
-    align-items: center;
 }
 .nav-print {
     margin-left: auto;

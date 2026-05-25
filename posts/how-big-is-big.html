@@ -121,10 +121,10 @@
 
     <h3>The 'Busy Beaver'</h3>
     <p>
-        The Busy Beaver game revolves around Turing machines—simple, theoretical computers with a finite number of states. For a given number of states <em>n</em>, there are finitely many machines. Some stop after a while, others run forever. The Busy Beaver function, BB(<em>n</em>), is the maximum number of steps that a <em>halting</em> Turing machine with <em>n</em> states takes. It is the maximum productive lifespan of the simplest little program.
+        The Busy Beaver game revolves around Turing machines—simple, theoretical computers with a finite number of states. For a given number of states <em>n</em>, there are finitely many machines. Some stop after a while, others run forever. The Busy Beaver function, BB(<em>n</em>), is the maximum number of steps that a <em>halting</em> Turing machine with <em>n</em> states takes. It is the maximum  lifespan of simple programs that are not infinite.
     </p>
     <p>
-        For <em>n</em>=4 and <em>n</em>=5, BB(<em>n</em>) is computable. For <em>n</em>=6 it is known that the value is larger than <em>f</em><sub>4</sub>(5). For <em>n</em>=7 it may still be expressible in terms of the FGH, but beyond that? With enough space on a computer we can make any little game, invent any trick, and easily program the FGH. So we soon reach the limit of our own power of imagination.
+        For <em>n</em>=4 and <em>n</em>=5, BB(<em>n</em>) is computable. For <em>n</em>=6 it is known that the value is larger than <em>f</em><sub>4</sub>(5). For <em>n</em>=7 it may still be expressible in terms of the FGH, but beyond that? With some space on a computer we can easily program the FGH, make games like TREE, and invent so many other tricks. While the BB description is short and valid, we didn't specify the algorithm. In a sense, we are entering the realm of "specifying" infinity as |1/0|.
     </p>
     <p>
         The number of possible Turing machines for an arbitrary <em>n</em>-state machine with 2 symbols can be calculated with the following formula: <em>N</em> = (4<em>n</em> + 4)<sup>2<em>n</em></sup>. For a machine with <em>n</em> = 100 states, this means there are 404<sup>200</sup> unique programs (and thus Turing machines). But to check which one stops last, we must wait until every program that will ever stop has stopped. However, there will be programs among them that do not stop but also do not fall into a loop. They continually create new information and no one knows whether they will ever fall silent as a result.

@@ -58,13 +58,14 @@
     
     <p>
         With <em>n</em> = 3: <em>f</em><sub>2</sub>(3) = <em>f</em><sub>1</sub>(<em>f</em><sub>1</sub>(<em>f</em><sub>1</sub>(3))) = <em>f</em><sub>1</sub>(<em>f</em><sub>1</sub>(6)) = <em>f</em><sub>1</sub>(12) = 24. Exponential growth.
-        
-        
-        <em>f</em><sub>1</sub>(3) = 6, so <em>f</em><sub>1</sub>(6) = 12, so <em>f</em><sub>1</sub>(12) = 24. The output for input 3 is 24. Exponential growth.
     </p>
     
     <p>
-        And so it continues. <em>f</em><sub>3</sub>(<em>n</em>) repeats <em>f</em><sub>2</sub> a number of times, which amounts to a small tower of powers, three steps high. This pattern works for every index, causing the numbers to explode tremendously. But then we make the index itself a large number. We define:
+        And so it continues. <em>f</em><sub>3</sub>(<em>n</em>) repeats <em>f</em><sub>2</sub> a number of times, which amounts to a small tower of powers, three steps high. <em>f</em><sub>3</sub>(3) is a tower of powers. <em>f</em><sub>3</sub>(3) = <em>f</em><sub>2</sub>(<em>f</em><sub>2</sub>(<em>f</em><sub>2</sub>(3))). We know <em>f</em><sub>2</sub>(3) = 24, so <em>f</em><sub>2</sub>(24) = 24 × 2<sup>24</sup>. That is 402653184, so <em>f</em><sub>2</sub>(402653184) = 402653184 × 2<sup>402653184</sup>, a number with about a hundred million digits. It's comparable to the number of possible bookshelves (assuming 100 books, 250 pages, and 100 symbols). The number of atoms in the universe is about 10<sup>80</sup>. Perhaps, the number of Wolfram space-atoms is 10<sup>358</sup>.
+    </p>
+        
+    <p>
+        This pattern works for every index, causing the numbers to explode tremendously. But then we make the index itself a large number. We define:
     </p>
     
     <p style="text-align: center;">
@@ -80,7 +81,7 @@
     </p>
     
     <p>
-        <em>f</em><sub>3</sub>(3) is a tower of powers. <em>f</em><sub>3</sub>(3) = <em>f</em><sub>2</sub>(<em>f</em><sub>2</sub>(<em>f</em><sub>2</sub>(3))). We know <em>f</em><sub>2</sub>(3) = 24, so <em>f</em><sub>2</sub>(24) = 24 × 2<sup>24</sup>. That is 402653184, so <em>f</em><sub>2</sub>(402653184) = 402653184 × 2<sup>402653184</sup>, a number with about a hundred million digits!
+        
     </p>
     
     <p>
@@ -100,7 +101,7 @@
     </p>
     
     <p>
-        We have <em>f</em><sub>ω</sub>(3) = <em>f</em><sub>3</sub>(3), which we already calculated and it was a gigantic number, let's call it G. The number of atoms in the universe is about 10<sup>80</sup>, but G is larger. The number of possible bookshelves of 100 books with 250 pages and 100 different symbols is about G. The next step is <em>f</em><sub>ω</sub>(G). But note: <em>f</em><sub>ω</sub>(G) = <em>f</em><sub>G</sub>(G). That means we apply the G-th function in the hierarchy to G itself. G was already gigantic, and now we use G as an <em>index</em> in the hierarchy. The final step is <em>f</em><sub>ω</sub>(<em>f</em><sub>G</sub>(G)), which uses the output of the previous step as an index yet again. The mind stutters.
+        We have <em>f</em><sub>ω</sub>(3) = <em>f</em><sub>3</sub>(3), which we already calculated and it was a gigantic number, let's call it G. The next step is <em>f</em><sub>ω</sub>(G). But note: <em>f</em><sub>ω</sub>(G) = <em>f</em><sub>G</sub>(G). That means we apply the G-th function in the hierarchy to G itself. G was already gigantic, and now we use G as an <em>index</em> in the hierarchy. The final step is <em>f</em><sub>ω</sub>(<em>f</em><sub>G</sub>(G)), which uses the output of the previous step as an index yet again. The mind stutters.
     </p>
     
     <p>

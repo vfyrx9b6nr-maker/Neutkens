@@ -11,40 +11,39 @@
 
     <h1 class="blog">Print the Essay</h1>
     <p>
-        It may be nice to have the essay in physical form, but printing the webpage directly isn't the neatest result. Below you'll find a clean, print-ready version without navigation elements, so you can translate it to your own language if desired and then print it. Don't forget to adjust the zoom level to avoid blank pages.
+        It may be nice to have the essay in physical form, but printing the webpage directly isn't the neatest result. Below you'll find clean, print-ready versions without navigation elements, so you can print them directly or translate them first. Don't forget to adjust the zoom level to avoid blank pages.
     </p>
 
     <section>
         <h2>Files</h2>
-        
+
         <article>
-            <h3><a href="files/essayEN.html" target="_blank" rel="noopener noreferrer">Printable version</a></h3>
-            <p>
-                HTML file — a clean layout ready for printing.
-            </p>
+            <h3><a href="files/essayEN.html" target="_blank" rel="noopener noreferrer">English HTML</a></h3>
+            <p>Print-ready English version (HTML).</p>
         </article>
-        
+
         <article>
             <h3><a href="files/essayEN.pdf" target="_blank" rel="noopener noreferrer">English PDF</a></h3>
-            <p>
-                Print-ready file (older version)
-            </p>
+            <p>Print-ready English version (PDF).</p>
         </article>
-        
+
+        <article>
+            <h3><a href="files/essayNL.html" target="_blank" rel="noopener noreferrer">Dutch HTML</a></h3>
+            <p>Print-ready Dutch version (HTML).</p>
+        </article>
+
         <article>
             <h3><a href="files/essayNL.pdf" target="_blank" rel="noopener noreferrer">Dutch PDF</a></h3>
-            <p>
-                The original language (older version)
-            </p>
+            <p>Print-ready Dutch version (PDF).</p>
         </article>
     </section>
-    
+
     <script>
-    fetch('menu.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('main-menu').innerHTML = data;
-      });
+        fetch('menu.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('main-menu').innerHTML = data;
+            });
     </script>
 </body>
 </html>

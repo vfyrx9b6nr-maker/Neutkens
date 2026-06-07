@@ -149,16 +149,10 @@ already laid out, nor is it yet computed. Space itself grows and changes with ev
     </div>
     
     <p style="text-align: right; margin-top: 2rem;">
-        <a href="/home.html" class="back-link" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">Visit the Website</a>
+        <a href="/home.html">Visit the Website</a>
     </p>
     
-    <script>
-    fetch('menu.html')
-      .then(response => response.text())
-      .then(data => {
-        document.getElementById('main-menu').innerHTML = data;
-      });
-    </script>
+    
     
 </body>
 </html>
